@@ -25,6 +25,14 @@ fi
 brew_prefix="$("$brew_bin" --prefix)"
 brew_owner="$(/usr/bin/stat -f '%Su' "$brew_prefix")"
 
+# Migrate off the old per-user autoupdate (brew autoupdate tap + LaunchAgent),
+# if a machine still has it from a previous version of this script.
+if "$brew_bin" tap 2>/dev/null | grep -q '^homebrew/autoupdate$'; then
+  echo "==> Removing old per-user Homebrew autoupdate"
+  "$brew_bin" autoupdate delete >/dev/null 2>&1 || true
+  "$brew_bin" untap homebrew/autoupdate >/dev/null 2>&1 || true
+fi
+
 if sudo launchctl print system/"$label" >/dev/null 2>&1; then
   echo "Homebrew autoupdate already running system-wide"
 else
@@ -37,7 +45,6 @@ else
 export PATH="${brew_prefix}/bin:${brew_prefix}/sbin:\$PATH"
 "$brew_bin" update
 "$brew_bin" upgrade
-"$brew_bin" upgrade --cask --greedy
 "$brew_bin" cleanup
 EOF
   sudo chown root:wheel "$run_script"
