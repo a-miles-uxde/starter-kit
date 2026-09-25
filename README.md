@@ -32,3 +32,7 @@ Each script in [`scripts/`](scripts) can also be run on its own, and all of them
 
 Quick references for the installed command-line tools live in [`cli/`](cli):
 [git](cli/git.md) · [gh](cli/gh.md) · [gitleaks](cli/gitleaks.md) · [herdr](cli/herdr.md)
+
+## License
+
+[MIT](LICENSE)
