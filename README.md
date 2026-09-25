@@ -9,7 +9,7 @@ Setup scripts for a new Mac.
   - **CLI:** git, GitHub CLI (`gh`), gitleaks, herdr
   - **Apps:** GitHub Desktop, Visual Studio Code, Google Chrome
 - Pins the apps to the Dock
-- Turns on auto-updates: a daily `brew upgrade` for the CLI tools; the apps update themselves
+- Turns on auto-updates: a daily `brew upgrade` for the CLI tools, run system-wide via a LaunchDaemon so it fires on schedule no matter which user is logged in (the apps update themselves); requires an admin password to install
 - Sets global git defaults (name, email, `main` branch, VS Code as editor)
 
 ## Usage
