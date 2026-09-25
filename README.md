@@ -15,8 +15,8 @@ Setup scripts for a new Mac.
 ## Usage
 
 ```sh
-git clone https://github.com/a-miles-uxde/starter-kit.git
-cd starter-kit
+git clone https://github.com/a-miles-uxde/starter-kit.git ~/Documents/starter-kit
+cd ~/Documents/starter-kit
 ./setup.sh
 gh auth login
 ```
@@ -27,3 +27,8 @@ Each script in [`scripts/`](scripts) can also be run on its own, and all of them
 
 - Add or remove packages in the `Brewfile`
 - Change which apps are pinned in `scripts/dock.sh`
+
+## CLI reference
+
+Quick references for the installed command-line tools live in [`cli/`](cli):
+[git](cli/git.md) · [gh](cli/gh.md) · [gitleaks](cli/gitleaks.md) · [herdr](cli/herdr.md)
