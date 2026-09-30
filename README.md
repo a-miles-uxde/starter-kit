@@ -15,7 +15,7 @@ Setup scripts for a new Mac.
 
 - Installs [Homebrew](https://brew.sh) if missing
 - Installs everything in the [`Brewfile`](Brewfile):
-  - **CLI:** git, GitHub CLI (`gh`), gitleaks, herdr
+  - **CLI:** git, GitHub CLI (`gh`), gitleaks, herdr, tree
   - **Apps:** GitHub Desktop, Visual Studio Code, Google Chrome
 - Pins the apps to the Dock
 - Runs a daily system-wide `brew upgrade` for the CLI tools via a LaunchDaemon (needs an admin password to install; the apps update themselves)
@@ -40,7 +40,7 @@ Each script in [`scripts/`](scripts) can also be run on its own, and all are saf
 ## CLI reference
 
 Quick references in [`cli/`](cli):
-[terminal basics](cli/terminal.md) · [git](cli/git.md) · [gh](cli/gh.md) · [gitleaks](cli/gitleaks.md) · [herdr](cli/herdr.md)
+[terminal basics](cli/terminal.md) · [git](cli/git.md) · [gh](cli/gh.md) · [gitleaks](cli/gitleaks.md) · [herdr](cli/herdr.md) · [tree](cli/tree.md)
 
 ## Guides
 
