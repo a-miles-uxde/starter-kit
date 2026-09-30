@@ -39,13 +39,14 @@ Each script in [`scripts/`](scripts) can also be run on its own, and all are saf
 
 ## CLI reference
 
-Quick references in [`cli/`](cli):
-[terminal basics](cli/terminal.md) · [git](cli/git.md) · [gh](cli/gh.md) · [gitleaks](cli/gitleaks.md) · [herdr](cli/herdr.md) · [tree](cli/tree.md)
+One-page command references for the terminal tools this kit installs, indexed in [`cli/README.md`](cli/README.md).
 
 ## Guides
 
-Interface walkthroughs for designers getting started with Git, GitHub, and Claude Code, in [`docs/`](docs):
+Interface walkthroughs for designers getting started with Git, GitHub, and Claude Code, indexed in [`docs/README.md`](docs/README.md):
 [GitHub Desktop](docs/github-desktop/README.md) · [VS Code](docs/vs-code/README.md)
+
+To add a guide or CLI reference, start from the templates and instructions in [`templates/`](templates/README.md).
 
 ## License
 
