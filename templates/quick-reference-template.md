@@ -19,7 +19,7 @@
 
 <!-- RECOMMENDED. Update this line whenever you re-check the commands against the installed tool. -->
 
-*Last verified: [Month YYYY] with [tool] [version] (`[tool] --version`).*
+_Last verified: [Month YYYY] with [tool] [version] (`[tool] --version`)._
 
 ## Contents
 

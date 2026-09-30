@@ -4,7 +4,7 @@ A guide to the GitHub Desktop interface for designers who are getting started wi
 
 Shortcuts below are for macOS. On Windows, swap `⌘` for `Ctrl`.
 
-*Last verified: September 2026 with GitHub Desktop 3.6.6 on macOS 27.*
+_Last verified: September 2026 with GitHub Desktop 3.6.6 on macOS 27._
 
 ## Contents
 
@@ -108,18 +108,18 @@ Right-click a file in the Changes list for extra actions, such as **Discard Chan
 
 ### Shortcuts worth learning first
 
-| Action | Shortcut |
-| --- | --- |
-| Show Changes / show History | `⌘1` / `⌘2` |
-| New branch | `⇧⌘N` |
-| Fetch | `⇧⌘T` |
-| Push | `⌘P` |
-| Pull | `⇧⌘P` |
-| Create a pull request (or view it on GitHub, once one exists) | `⌘R` |
-| Clone a repository | `⇧⌘O` |
-| Show the repo in Finder | `⇧⌘F` |
-| Open the repo in your external editor | `⇧⌘A` |
-| Open the repo in Terminal | `` ⌃` `` |
+| Action                                                        | Shortcut    |
+| ------------------------------------------------------------- | ----------- |
+| Show Changes / show History                                   | `⌘1` / `⌘2` |
+| New branch                                                    | `⇧⌘N`       |
+| Fetch                                                         | `⇧⌘T`       |
+| Push                                                          | `⌘P`        |
+| Pull                                                          | `⇧⌘P`       |
+| Create a pull request (or view it on GitHub, once one exists) | `⌘R`        |
+| Clone a repository                                            | `⇧⌘O`       |
+| Show the repo in Finder                                       | `⇧⌘F`       |
+| Open the repo in your external editor                         | `⇧⌘A`       |
+| Open the repo in Terminal                                     | `` ⌃` ``    |
 
 If a shortcut doesn't respond, find the action in the menu bar. The shortcut is listed beside it.
 
@@ -159,7 +159,7 @@ Edit files in Figma exports, Markdown, code, or whatever the project holds, usin
 2. Uncheck any file or line that doesn't belong in this snapshot. Click the line-number gutter in the diff to include or exclude single lines.
 3. Write a **Summary** in the commit box: a short sentence that says what changed and why, such as `Shorten onboarding headline`.
 4. Add a **Description** if it helps a reviewer.
-5. Click **Commit to** *your-branch*.
+5. Click **Commit to** _your-branch_.
 
 Small, focused commits are easier to review and easier to undo. If Claude Code or any other AI tool made the changes, work through [Reviewing AI output](#reviewing-ai-output) before you commit.
 
@@ -226,7 +226,7 @@ When your branch changes what people see or hear, check it before you open the p
 | Claude changed more than you asked | Uncheck the files or lines you don't want and commit the rest, or right-click them → **Discard Changes**. If you committed before the request, you can discard everything and start again. |
 | Committed too soon and haven't pushed | Click **Undo** at the bottom of the **Changes** tab, next to the last commit. Your changes return to the Changes tab. |
 | Want to undo a commit you already pushed | History tab → right-click the commit → **Revert Changes in Commit**. This adds a new commit that reverses it. |
-| Need to switch branches with unfinished work | Switch anyway and choose **Leave my changes on** *current-branch* to stash them, or **Bring my changes to** *new-branch* to carry them along. To restore stashed work, go back to that branch, click **Stashed Changes** in the Changes tab, then **Restore**. |
+| Need to switch branches with unfinished work | Switch anyway and choose **Leave my changes on** _current-branch_ to stash them, or **Bring my changes to** _new-branch_ to carry them along. To restore stashed work, go back to that branch, click **Stashed Changes** in the Changes tab, then **Restore**. |
 | Committed to the wrong branch | Stop, and ask Claude or a teammate before pushing. It is fixable, but the steps depend on your situation. |
 
 ## Using GitHub Desktop with Claude Code

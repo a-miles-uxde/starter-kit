@@ -2,7 +2,7 @@
 
 `gh` is GitHub's official command-line tool. It brings pull requests, issues, repositories, Actions runs, and releases into the terminal, so you can open a PR for a copy change, check whether a prototype's build passed, or file a bug without switching to the browser. It complements git: git handles your files and history on your Mac, gh handles everything on GitHub. Run `gh` with no arguments to see a list of its commands.
 
-*Last verified: September 2026 with gh 2.101.0 (`gh --version`) on macOS 27.* If a command below fails, check `gh --help` first: flags change between versions.
+_Last verified: September 2026 with gh 2.101.0 (`gh --version`) on macOS 27._ If a command below fails, check `gh --help` first: flags change between versions.
 
 ## Contents
 

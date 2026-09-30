@@ -4,7 +4,7 @@ A guide to the Visual Studio Code interface for designers who are getting starte
 
 Shortcuts below are for macOS. On Windows and Linux, swap `⌘` for `Ctrl`.
 
-*Last verified: September 2026 with VS Code 1.139.1 and the Claude Code extension 2.1.286 on macOS 27.*
+_Last verified: September 2026 with VS Code 1.139.1 and the Claude Code extension 2.1.286 on macOS 27._
 
 ## Contents
 
@@ -114,31 +114,31 @@ Open VS Code alongside this table to follow along.
 
 ### Shortcuts worth learning first
 
-| Action | Shortcut |
-| --- | --- |
-| Command Palette (run any command) | `⇧⌘P` |
-| Quick Open (jump to a file by name) | `⌘P` |
-| Show or hide the Side Bar | `⌘B` |
-| Open the Source Control view | `⌃⇧G` |
-| Show or hide the terminal panel | `` ⌃` `` |
-| Split the editor | `⌘\` |
-| Open Extensions view | `⇧⌘X` |
-| Open Settings | `⌘,` |
-| Preview a Markdown file | `⇧⌘V` |
+| Action                              | Shortcut |
+| ----------------------------------- | -------- |
+| Command Palette (run any command)   | `⇧⌘P`    |
+| Quick Open (jump to a file by name) | `⌘P`     |
+| Show or hide the Side Bar           | `⌘B`     |
+| Open the Source Control view        | `⌃⇧G`    |
+| Show or hide the terminal panel     | `` ⌃` `` |
+| Split the editor                    | `⌘\`     |
+| Open Extensions view                | `⇧⌘X`    |
+| Open Settings                       | `⌘,`     |
+| Preview a Markdown file             | `⇧⌘V`    |
 
 If you forget a shortcut, open the Command Palette and type what you want to do. The shortcut is listed beside each command.
 
 ## Opening a project
 
-1. Choose **File → Open Folder…** and pick your project folder. In Git terms, a project is a *repository* (repo).
+1. Choose **File → Open Folder…** and pick your project folder. In Git terms, a project is a _repository_ (repo).
 2. Or, to copy a project from GitHub, open the Command Palette and run **Git: Clone**, then paste the repo URL.
-3. If VS Code asks whether you trust the authors of the folder, choose **Yes, I trust the authors** only for projects you made or got from someone you know. Otherwise choose **No, I don't trust the authors**. VS Code then opens the folder in *Restricted Mode*, which turns off the terminal, extensions (including Claude Code), and other features that could run code.
+3. If VS Code asks whether you trust the authors of the folder, choose **Yes, I trust the authors** only for projects you made or got from someone you know. Otherwise choose **No, I don't trust the authors**. VS Code then opens the folder in _Restricted Mode_, which turns off the terminal, extensions (including Claude Code), and other features that could run code.
 
 **Check:** the Explorer (top icon in the Activity Bar) shows the project's files, and the Status Bar shows a branch name such as `main`.
 
 ## Git in VS Code
 
-Git records snapshots of your work, called *commits*, so you can see what changed, go back, and work on ideas without disturbing the main version. For command-line equivalents, see the [git quick reference](../../cli/git.md).
+Git records snapshots of your work, called _commits_, so you can see what changed, go back, and work on ideas without disturbing the main version. For command-line equivalents, see the [git quick reference](../../cli/git.md).
 
 ### The Source Control view
 
@@ -200,7 +200,7 @@ Git tracks changes on your machine. GitHub is where the repo lives online, so ot
 
 - **Sign in:** run **Git: Clone** or **Publish Branch** and VS Code prompts you to sign in to GitHub in the browser. Or use the **Accounts** icon near the bottom of the Activity Bar.
 - **Terminal option:** this kit also installs the GitHub CLI. Run `gh auth login` once in the terminal panel (`` ⌃` ``). See the [gh quick reference](../../cli/gh.md).
-- **Pull requests:** after publishing a branch, open a pull request on github.com so teammates can review it. The optional *GitHub Pull Requests* extension, searchable in the Extensions view, lets you review them inside VS Code.
+- **Pull requests:** after publishing a branch, open a pull request on github.com so teammates can review it. The optional _GitHub Pull Requests_ extension, searchable in the Extensions view, lets you review them inside VS Code.
 - **GitHub Desktop** is also installed by this kit if you prefer a separate app for Git. It works on the same repos. See the [GitHub Desktop guide](../github-desktop/README.md).
 
 ## Claude Code in VS Code
@@ -248,12 +248,12 @@ In @card.css, make all padding and margin values fit an 8px spacing scale (8, 16
 
 ### Claude shortcuts
 
-| Action | Shortcut |
-| --- | --- |
-| Toggle focus between editor and Claude | `⌘Esc` |
-| Open a new conversation as an editor tab | `⇧⌘Esc` |
-| Insert @-mention of current file and selection | `⌥K` |
-| Reopen the last closed Claude tab | `⇧⌘T` |
+| Action                                         | Shortcut |
+| ---------------------------------------------- | -------- |
+| Toggle focus between editor and Claude         | `⌘Esc`   |
+| Open a new conversation as an editor tab       | `⇧⌘Esc`  |
+| Insert @-mention of current file and selection | `⌥K`     |
+| Reopen the last closed Claude tab              | `⇧⌘T`    |
 
 If `⌘Esc` does nothing, see [When things go wrong](#when-things-go-wrong).
 

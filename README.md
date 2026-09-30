@@ -7,6 +7,7 @@ Setup scripts for a new Mac.
 - [What it does](#what-it-does)
 - [Usage](#usage)
 - [Customizing](#customizing)
+- [Formatting](#formatting)
 - [CLI reference](#cli-reference)
 - [Guides](#guides)
 - [License](#license)
@@ -15,7 +16,7 @@ Setup scripts for a new Mac.
 
 - Installs [Homebrew](https://brew.sh) if missing
 - Installs everything in the [`Brewfile`](Brewfile):
-  - **CLI:** git, GitHub CLI (`gh`), gitleaks, herdr, tree
+  - **CLI:** git, GitHub CLI (`gh`), gitleaks, herdr, pre-commit, prettier, tree
   - **Apps:** GitHub Desktop, Visual Studio Code, Google Chrome
 - Pins the apps to the Dock
 - Runs a daily system-wide `brew upgrade` for the CLI tools via a LaunchDaemon (needs an admin password to install; the apps update themselves)
@@ -36,6 +37,18 @@ Each script in [`scripts/`](scripts) can also be run on its own, and all are saf
 
 - Add or remove packages in the `Brewfile`
 - Change pinned apps in `scripts/dock.sh`
+- Change Prettier's formatting rules in [`.prettierrc`](.prettierrc)
+
+## Formatting
+
+The Markdown files follow one style, checked by [Prettier](cli/prettier.md). Before you open a pull request, run:
+
+```sh
+prettier --check .    # List files that aren't formatted, change nothing
+prettier --write .    # Careful: rewrites the listed files in place
+```
+
+[`.prettierrc`](.prettierrc) sets paragraphs to stay on one line, so your editor wraps them to fit the window. Prettier is installed by the `Brewfile`. The [pre-commit](cli/pre-commit.md) tool is installed too, but this repo doesn't have a checks file yet, so nothing runs on commit.
 
 ## CLI reference
 
@@ -43,8 +56,7 @@ One-page command references for the terminal tools this kit installs, indexed in
 
 ## Guides
 
-Interface walkthroughs for designers getting started with Git, GitHub, and Claude Code, indexed in [`docs/README.md`](docs/README.md):
-[GitHub Desktop](docs/github-desktop/README.md) · [VS Code](docs/vs-code/README.md)
+Interface walkthroughs for designers getting started with Git, GitHub, and Claude Code, indexed in [`docs/README.md`](docs/README.md): [GitHub Desktop](docs/github-desktop/README.md) · [VS Code](docs/vs-code/README.md)
 
 To add a guide or CLI reference, start from the templates and instructions in [`templates/`](templates/README.md).
 

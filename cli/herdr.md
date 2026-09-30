@@ -2,7 +2,7 @@
 
 Herdr is a terminal workspace manager for AI coding agents. It organizes terminals into workspaces, tabs, and panes inside a persistent session, recognizes coding agents such as Claude Code running in those panes, and shows whether each one is working, idle, or waiting on you. Because the session keeps running in the background, you can close the window and come back later with every agent still going, which helps when you run one agent on a prototype while another drafts copy. Run `herdr` with no arguments to open the session, or reattach to it if it's already running. Most other commands below talk to that running session and reply in JSON, a structured text format that's easy for scripts and Claude to read.
 
-*Last verified: September 2026 with herdr 0.9.1 (`herdr --version`) on macOS 27.*
+_Last verified: September 2026 with herdr 0.9.1 (`herdr --version`) on macOS 27._
 
 If a command below fails, check `herdr --help` first: flags change between versions. To see every option for a command group, run the group on its own, such as `herdr pane` or `herdr agent`. Commands that close, stop, or remove things act right away with no confirmation prompt, and stopping a session ends every agent in it. Those lines are marked **Careful** below.
 

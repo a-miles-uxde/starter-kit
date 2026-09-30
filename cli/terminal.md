@@ -2,7 +2,7 @@
 
 Terminal is the Mac app where you type commands instead of clicking. It runs a shell, a program that reads what you type and runs it; on a new Mac that shell is zsh. These are the everyday built-in commands underneath the other tools in this kit, such as git, gh, gitleaks, herdr, and tree: moving between folders, creating and deleting files, looking inside them, and (now and then) doing something that needs admin rights. macOS ships the BSD versions of these commands, so some flags differ from the Linux versions in online tutorials; the notes below say where. Open Terminal from **Applications → Utilities → Terminal**, or press `⌘Space` and type `Terminal`.
 
-*Last verified: September 2026 with zsh 5.9 and the built-in commands on macOS 27.0 (`zsh --version`, `sw_vers`).* Most of these commands don't accept `--help` on a Mac, so if one fails, check `man <command>` first: flags differ between macOS and Linux.
+_Last verified: September 2026 with zsh 5.9 and the built-in commands on macOS 27.0 (`zsh --version`, `sw_vers`)._ Most of these commands don't accept `--help` on a Mac, so if one fails, check `man <command>` first: flags differ between macOS and Linux.
 
 A safety note before you start: `rm`, `cp`, and `mv` never use the Trash and don't ask before replacing a file, and `sudo` runs a command with admin rights and no confirmation. Each is marked **Careful** below, with a safer choice next to it.
 

@@ -21,7 +21,7 @@ Shortcuts below are for macOS. On Windows, swap `⌘` for `Ctrl`.
 
 <!-- REQUIRED. Update this line every time you re-check the guide against the tool. -->
 
-*Last verified: [Month YYYY] with [Tool] [version] on macOS [version].*
+_Last verified: [Month YYYY] with [Tool] [version] on macOS [version]._
 
 ## Contents
 
@@ -111,10 +111,10 @@ Open [Tool] alongside this table to follow along.
 
 <!-- OPTIONAL. Five to ten shortcuts, most useful first. Verify each one in the app's menus or official docs. Column order is Action, then Shortcut. -->
 
-| Action | Shortcut |
-| --- | --- |
-| [Action] | `[⇧⌘X]` |
-| [Action] | `[⌘,]` |
+| Action   | Shortcut |
+| -------- | -------- |
+| [Action] | `[⇧⌘X]`  |
+| [Action] | `[⌘,]`   |
 
 If a shortcut doesn't respond, find the action in the menu bar. The shortcut is listed beside it.
 

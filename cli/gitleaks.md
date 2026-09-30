@@ -2,7 +2,7 @@
 
 Gitleaks scans files for secrets such as API keys, passwords, and access tokens, so you can catch them before they reach a shared place like GitHub. It's worth running before you commit a prototype that talks to a real service, or before you push a folder of exported design files and notes. In this kit it works alongside git: gitleaks can scan a folder, a repo's full history, or only the changes you're about to commit. Run `gitleaks --help` to list its commands. When it finds something, it exits with code 1, which is what lets it block a commit from a git hook.
 
-*Last verified: September 2026 with gitleaks 8.30.1 (`gitleaks --version`) on macOS 27.*
+_Last verified: September 2026 with gitleaks 8.30.1 (`gitleaks --version`) on macOS 27._
 
 If a command below fails, check `gitleaks --help` first: flags change between versions. Gitleaks only reads files. None of its scans change or delete your work, but the reports and hook in [Saving reports](#saving-reports) and [Blocking commits with a hook](#blocking-commits-with-a-hook) write files, so read the notes there first.
 

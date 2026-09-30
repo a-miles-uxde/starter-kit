@@ -2,7 +2,7 @@
 
 Tree prints a folder's contents as an indented outline, so you can see how files and subfolders fit together at a glance. It's handy for checking a project's layout before you ask Claude to change it, pasting a folder structure into a handoff doc or chat, and seeing where disk space is going. It works alongside Git: `tree --gitignore` shows the same files Git cares about. Run `tree` with no arguments to list the current folder.
 
-*Last verified: September 2026 with tree 2.3.2 on macOS 27.0 (`tree --version`).* If a command below fails, check `tree --help` first: flags change between versions.
+_Last verified: September 2026 with tree 2.3.2 on macOS 27.0 (`tree --version`)._ If a command below fails, check `tree --help` first: flags change between versions.
 
 tree only reads folders, so it's safe to run anywhere. The one exception is `-o`, which writes its output to a file and replaces any file with the same name. It's marked **Careful** below.
 

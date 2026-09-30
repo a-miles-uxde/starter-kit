@@ -11,6 +11,8 @@ The pages don't link to each other. Start here to find the right one.
 | [gh](gh.md) | Work with pull requests, issues, and repositories on GitHub |
 | [gitleaks](gitleaks.md) | Scan for passwords and keys before you commit or share |
 | [herdr](herdr.md) | Run several terminals and AI coding agents side by side |
+| [pre-commit](pre-commit.md) | Run automatic checks every time you commit |
+| [prettier](prettier.md) | Format files so spacing and style stay consistent |
 | [tree](tree.md) | Print a folder's structure as an outline |
 
 To add a reference, copy [`templates/cli-reference.md`](../templates/cli-reference.md), then add a row to this table.

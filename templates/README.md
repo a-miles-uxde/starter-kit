@@ -24,6 +24,7 @@ Starting points for new guides in [`docs/`](../docs) and quick references in [`c
 | --- | --- |
 | [`guide-template.md`](guide-template.md) | A full guide in `docs/<topic>/README.md`: an interface tour, a workflow, or both. |
 | [`cli-reference.md`](cli-reference.md) | A command reference in `cli/<tool>.md`. |
+| [`quick-reference-template.md`](quick-reference-template.md) | A shorter, bare-bones starting point for the same kind of page. Start from `cli-reference.md` when you can. |
 
 ## Which template to use
 
@@ -71,7 +72,7 @@ Menu names, shortcuts, commands, version numbers, and plan requirements change o
 
 ### 5. Link it in
 
-1. Add a row for the guide to the table in the [guides index](../docs/README.md), and add it to the **Guides** line in the [main README](../README.md), in the same `[Name](docs/%3Ctopic%3E/README.md)` format, separated by ` · `.
+1. Add a row for the guide to the table in the [guides index](../docs/README.md), and add it to the **Guides** line in the [main README](../README.md), in the same `[Name](docs/%3Ctopic%3E/README.md)` format, separated by `·`.
 2. Add it to **Next steps** in the guides a reader would come from, and add those guides to its own **Next steps**.
 3. If the guide has a matching quick reference in `cli/`, link each to the other.
 
@@ -140,7 +141,7 @@ Every line in a code block is a command, then a `#` comment that starts with a v
 | Links in the kit | Relative paths | `[VS Code guide](../vs-code/README.md)` |
 | Official links | `[Name](url): description` | `[GitHub Desktop documentation](https://docs.github.com/en/desktop): the full documentation` |
 | Headings | Sentence case | "Tour of the interface," not "Tour Of The Interface" |
-| Shortcut tables | **Action** column, then **Shortcut** | |
+| Shortcut tables | **Action** column, then **Shortcut** |  |
 
 Images go in an `images/` folder beside the guide, and each meaningful image gets alt text that says what it shows, not "screenshot."
 
@@ -154,6 +155,7 @@ Before you open a pull request for a new or updated guide:
 - [ ] Every Contents link matches a real heading. Click each one in a Markdown preview (in VS Code, `⇧⌘V`).
 - [ ] No `[bracketed placeholders]` or template HTML comments are left.
 - [ ] No em dashes, filler words, or unexplained acronyms.
+- [ ] `prettier --check .` passes. It may change `<url>`-style link placeholders to `url`, so check the result before you keep it.
 - [ ] Every workflow that produces AI output has a review step.
 - [ ] Data handling is covered where the reader might paste personal, confidential, or secret material.
 - [ ] Workflows that touch UI include the accessibility check.

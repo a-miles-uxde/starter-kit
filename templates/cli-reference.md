@@ -50,8 +50,8 @@ Verified with <tool> <x.y.z> on macOS <nn>, <Month YYYY>. Run `<tool> --version`
 
 ## Official links
 
-- [<Tool> website](<url>): <what's there>
-- [<Tool> documentation](<url>): <what's there>
+- [<Tool> website](url): <what's there>
+- [<Tool> documentation](url): <what's there>
 
 ## Before you start
 

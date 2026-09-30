@@ -2,7 +2,7 @@
 
 Git is version control: it saves named snapshots of a project (commits), lets you branch off to try an idea without touching the main version, and syncs your work with GitHub. Think of a commit as a named version in a file's history, and a branch as duplicating a Figma page to explore. In this kit, git does the saving and syncing under GitHub Desktop, VS Code, `gh`, and Claude Code, so the terminal commands below work on the same repositories those apps show. Run `git` with no arguments to list the most common commands.
 
-*Last verified: September 2026 with git 2.55.0 (`git --version`) on macOS 27.* If a command below fails, check `git <command> -h` first: flags change between versions.
+_Last verified: September 2026 with git 2.55.0 (`git --version`) on macOS 27._ If a command below fails, check `git <command> -h` first: flags change between versions.
 
 ## Contents
 
