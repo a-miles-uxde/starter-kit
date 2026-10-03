@@ -56,7 +56,7 @@ One-page command references for the terminal tools this kit installs, indexed in
 
 ## Guides
 
-Interface walkthroughs for designers getting started with Git, GitHub, and Claude Code, indexed in [`docs/README.md`](docs/README.md): [GitHub Desktop](docs/github-desktop/README.md) · [VS Code](docs/vs-code/README.md)
+Interface walkthroughs for designers getting started with Git, GitHub, and Claude Code, indexed in [`docs/README.md`](docs/README.md): [GitHub Desktop](docs/github-desktop/README.md) · [VS Code](docs/vs-code/README.md) · [Git in three places](docs/git-github-desktop-vscode-comparison.md)
 
 To add a guide or CLI reference, start from the templates and instructions in [`templates/`](templates/README.md).
 

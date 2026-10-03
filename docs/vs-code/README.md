@@ -92,7 +92,7 @@ This kit installs VS Code for you. See the [main README](../../README.md).
 ## First-time setup
 
 1. Open VS Code from your Applications folder.
-2. Check the version with **Code → About Visual Studio Code**. **Check:** it says 1.94.0 or later. If it's older, choose **Code → Check for Updates…**.
+2. Check the version with **Code → About Visual Studio Code**. **Check:** it says 1.94.0 or later. If it's older, choose **Code → Check for Updates...**.
 3. Sign in to GitHub: click the **Accounts** icon near the bottom of the Activity Bar and choose to sign in with GitHub. Finish in your browser. **Check:** the **Accounts** menu shows your GitHub username.
 4. Install the Claude Code extension. See [Install the extension](#install-the-extension).
 
@@ -130,7 +130,7 @@ If you forget a shortcut, open the Command Palette and type what you want to do.
 
 ## Opening a project
 
-1. Choose **File → Open Folder…** and pick your project folder. In Git terms, a project is a _repository_ (repo).
+1. Choose **File → Open Folder...** and pick your project folder. In Git terms, a project is a _repository_ (repo).
 2. Or, to copy a project from GitHub, open the Command Palette and run **Git: Clone**, then paste the repo URL.
 3. If VS Code asks whether you trust the authors of the folder, choose **Yes, I trust the authors** only for projects you made or got from someone you know. Otherwise choose **No, I don't trust the authors**. VS Code then opens the folder in _Restricted Mode_, which turns off the terminal, extensions (including Claude Code), and other features that could run code.
 
@@ -158,7 +158,7 @@ This loop takes one change from idea to a pull request. Use it for every change,
 
 ### 1. Create a branch
 
-Click the branch name in the Status Bar and choose **Create new branch…**. Give it a short name such as `checkout-button-states`. Branches keep experiments away from `main`.
+Click the branch name in the Status Bar and choose **Create new branch...**. Give it a short name such as `checkout-button-states`. Branches keep experiments away from `main`.
 
 **Check:** the Status Bar shows your new branch name.
 
@@ -294,8 +294,8 @@ When your change affects what people see or hear (copy, colors, spacing, compone
 | You edited a file and want the old version back | In Source Control, hover over the file and click **Discard Changes**. This throws away every uncommitted edit to that file, so be sure first. |
 | Claude changed more than you asked | Hover over a message in the Claude panel, click the rewind button, and choose **Rewind code to here**. Or discard the unwanted files in Source Control. |
 | You committed too soon, and haven't published yet | Run **Git: Undo Last Commit** from the Command Palette. Your changes come back, ready to edit and commit again. |
-| The Spark icon is missing | Open a file (the editor icon only shows then), check that VS Code is 1.94.0 or later, and run **Developer: Reload Window**. If the folder is in Restricted Mode, run **Manage Workspace Trust** from the Command Palette. |
-| `⌘Esc` does nothing | macOS may be using it for Game Overlay. Open **System Settings → Keyboard → Keyboard Shortcuts → Game Controllers** and clear **Game Overlay**. |
+| The Spark icon is missing | Open a file (the editor icon only shows then), check that VS Code is 1.94.0 or later, and run **Developer: Reload Window**. If the folder is in Restricted Mode, run **Workspaces: Manage Workspace Trust** from the Command Palette. |
+| `⌘Esc` does nothing | macOS may be using it for Game Overlay. Open **System Settings → Keyboard → Keyboard Shortcuts… → Game Controllers** and clear **Game Overlay**. |
 | Sync fails, or VS Code mentions a conflict | Stop, and ask Claude to explain the message, or ask a teammate, before you push, force anything, or delete a branch. |
 
 ## A typical session
@@ -320,6 +320,7 @@ When your change affects what people see or hear (copy, colors, spacing, compone
 ## Next steps
 
 - [GitHub Desktop guide](../github-desktop/README.md): the same Git loop in a separate app, with a clear view of history
+- [Git in three places](../git-github-desktop-vscode-comparison.md): each Source Control action next to its terminal command and GitHub Desktop equivalent
 - [git quick reference](../../cli/git.md): the same tasks as terminal commands
 - [CLI reference](../../cli/README.md): the other terminal tools this kit installs, including [herdr](../../cli/herdr.md) for running several Claude Code sessions at once
 - [Claude Code in VS Code](https://code.claude.com/docs/en/vs-code): every extension feature and setting, in depth

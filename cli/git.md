@@ -227,3 +227,4 @@ Before you commit, read `git diff` yourself and compare it with Claude's summary
 - [CLI reference index](README.md): all the command references in this kit
 - [GitHub Desktop guide](../docs/github-desktop/README.md): the same save-and-share loop, with buttons instead of commands
 - [VS Code guide](../docs/vs-code/README.md#git-in-vs-code): git in the Source Control view, next to your files
+- [Git in three places](../docs/git-github-desktop-vscode-comparison.md): each command above next to its button in GitHub Desktop and VS Code

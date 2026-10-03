@@ -8,6 +8,7 @@ Start here to find the right guide.
 | --- | --- |
 | [GitHub Desktop](github-desktop/README.md) | Save versions of your work, try ideas on branches, and open pull requests without typing Git commands |
 | [VS Code](vs-code/README.md) | Open a project, see what changed, and work with Claude Code in one window |
+| [Git in three places](git-github-desktop-vscode-comparison.md) | Find the same Git action in GitHub Desktop, the terminal, and VS Code, and see which tasks only the terminal can do |
 
 Looking for terminal commands instead? See the [CLI reference](../cli/README.md).
 

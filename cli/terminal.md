@@ -168,7 +168,7 @@ kill <pid>                      # Careful: asks one process to quit, unsaved wor
 killall <name>                  # Careful: quits every process with that name
 ```
 
-Quit apps the usual way first. If one is frozen, **Force Quit** (`⌥⌘Esc`) is the gentler choice. `kill` and `killall` send a quit signal that many apps obey without asking to save. Names with spaces need quotes: `killall "Google Chrome"`.
+Quit apps the usual way first. If one is frozen, **Force Quit…** in the Apple menu (`⌥⌘Esc`) is the gentler choice. `kill` and `killall` send a quit signal that many apps obey without asking to save. Names with spaces need quotes: `killall "Google Chrome"`.
 
 ### Permissions and admin access
 

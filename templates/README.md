@@ -66,6 +66,7 @@ Delete sections marked `OPTIONAL` that don't earn their place, and sections mark
 Menu names, shortcuts, commands, version numbers, and plan requirements change often.
 
 - Check each one against the tool's official documentation or the app itself (menus list their shortcuts beside each item).
+- Copy each menu item, button, and tab name character for character, including any trailing ellipsis. See [Style rules](#style-rules).
 - For command-line tools, run `<tool> --help` or `<tool> --version`.
 - If you can't verify something, leave it out, or mark it `(unverified)` and ask a reviewer to confirm it before merging.
 - Set the **Last verified** line to the month you checked and the version you checked against.
@@ -133,15 +134,23 @@ Every line in a code block is a command, then a `#` comment that starts with a v
 
 | Element | Format | Example |
 | --- | --- | --- |
-| UI labels | Bold, exactly as on screen | **Current Branch**, **Commit to main** |
-| Menu paths | Bold, with `→` between levels | **File → Clone Repository** |
-| Shortcuts | Code, in parentheses after the menu path | **File → Clone Repository** (`⇧⌘O`) |
+| UI labels | Bold, exactly as on screen, including capitalization, punctuation, and any trailing ellipsis | **Current Branch**, **Commit 2 files to main**, **Discard Changes…** |
+| Menu paths | Bold, with `→` between levels, and each level exactly as on screen | **File → Clone Repository…** |
+| Shortcuts | Code, in parentheses after the menu path | **File → Clone Repository…** (`⇧⌘O`) |
 | Commands, files, paths, keys, typed text | Code | `git status`, `.gitignore`, `⌘P` |
 | Prompts to copy | Fenced code block with `text` | See the template's core workflow |
 | Links in the kit | Relative paths | `[VS Code guide](../vs-code/README.md)` |
 | Official links | `[Name](url): description` | `[GitHub Desktop documentation](https://docs.github.com/en/desktop): the full documentation` |
 | Headings | Sentence case | "Tour of the interface," not "Tour Of The Interface" |
 | Shortcut tables | **Action** column, then **Shortcut** |  |
+
+**Copy UI labels exactly as the app shows them.** Match every button, menu item, tab, field, and Command Palette entry character for character: capitalization, punctuation, and any trailing ellipsis. In a menu, an ellipsis usually means the item opens a dialog, so readers use it to confirm they've found the right item.
+
+- **Keep the ellipsis when the app shows one, and don't add one when it doesn't.** GitHub Desktop has **Branch → Delete…** but **Branch → Compare to Branch**.
+- **Use the same ellipsis the app uses.** Some apps show one ellipsis character (`…`) and others show three periods (`...`). GitHub Desktop and macOS use `…`: **File → Clone Repository…**, **Force Quit…**. VS Code uses `...`: **File → Open Folder...**, **Git: Create Branch...**. Check each app instead of assuming, and watch for autocorrect turning one into the other.
+- **Note labels that change.** Some labels depend on state or settings. In GitHub Desktop, **Stash All Changes** gains an ellipsis only when a stash already exists. Document what a reader sees by default, and mention the other form if they're likely to meet it.
+- **Include the category in Command Palette names.** Write **Git: Undo Last Commit** and **Workspaces: Manage Workspace Trust**, the way the palette lists them.
+- **Label, not description.** When you describe a control instead of naming it, leave it unbolded: "click the commit button," not "click **Commit**" when the button reads **Commit 2 files to main**.
 
 Images go in an `images/` folder beside the guide, and each meaningful image gets alt text that says what it shows, not "screenshot."
 
@@ -151,6 +160,7 @@ Before you open a pull request for a new or updated guide:
 
 - [ ] Every step works in order, from a fresh start, for someone who has never used the tool.
 - [ ] Every command, shortcut, menu path, and version is verified or marked `(unverified)`.
+- [ ] Every UI label and menu path matches the app character for character: capitalization, punctuation, and any trailing ellipsis, written as `…` or `...` to match what the app shows.
 - [ ] The **Last verified** line shows this month and the version you checked.
 - [ ] Every Contents link matches a real heading. Click each one in a Markdown preview (in VS Code, `⇧⌘V`).
 - [ ] No `[bracketed placeholders]` or template HTML comments are left.

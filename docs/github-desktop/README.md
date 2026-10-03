@@ -84,10 +84,10 @@ This kit installs GitHub Desktop for you. See the [main README](../../README.md)
 1. Open GitHub Desktop.
 2. Choose **Sign in to GitHub.com** and finish signing in through your browser.
 3. Confirm your name and email. These are attached to every commit you make.
-4. To change either later, open **GitHub Desktop → Settings** (`⌘,`). Accounts are under **Accounts**, and the name and email are under **Git**.
+4. To change either later, open **GitHub Desktop → Settings…** (`⌘,`). Accounts are under **Accounts**, and the name and email are under **Git**.
 5. Under **Integrations**, pick your external editor (for example Visual Studio Code) so **Open in Visual Studio Code** works from the Repository menu.
 
-**Check:** **GitHub Desktop → Settings → Accounts** shows your GitHub username.
+**Check:** **GitHub Desktop → Settings… → Accounts** shows your GitHub username.
 
 ## Tour of the interface
 
@@ -101,10 +101,10 @@ Open GitHub Desktop alongside this table to follow along.
 | **Changes tab** | Left sidebar | Every file you have edited, with a checkbox beside each. |
 | **History tab** | Left sidebar | Past commits on this branch. Click one to see what it changed. |
 | **Diff view** | Right, large | The selected file with added lines in green and removed lines in red. |
-| **Commit box** | Bottom left | A summary, an optional description, and the **Commit** button. |
+| **Commit box** | Bottom left | A summary, an optional description, and the commit button, which names the branch it commits to. |
 | **Menu bar** | Top of screen | Repository, Branch, and View menus hold actions the buttons don't cover. |
 
-Right-click a file in the Changes list for extra actions, such as **Discard Changes**, **Show in Finder**, and **Open in Visual Studio Code**.
+Right-click a file in the Changes list for extra actions, such as **Discard Changes…**, **Reveal in Finder**, and **Open in Visual Studio Code**.
 
 ### Shortcuts worth learning first
 
@@ -125,9 +125,9 @@ If a shortcut doesn't respond, find the action in the menu bar. The shortcut is 
 
 ## Getting a project
 
-- **Clone from GitHub.** **File → Clone Repository** (`⇧⌘O`), pick the repo from your list or paste its URL, choose a local folder, and click **Clone**.
-- **Add a folder you already have.** **File → Add Local Repository** (`⌘O`). If the folder isn't tracked yet, GitHub Desktop offers to create a repository there.
-- **Start a new one.** **File → New Repository** (`⌘N`). Give it a name and location, then **Publish repository** in the top bar to put it on GitHub.
+- **Clone from GitHub.** **File → Clone Repository…** (`⇧⌘O`), pick the repo from your list or paste its URL, choose a local folder, and click **Clone**.
+- **Add a folder you already have.** **File → Add Local Repository…** (`⌘O`). If the folder isn't tracked yet, GitHub Desktop offers to create a repository there.
+- **Start a new one.** **File → New Repository…** (`⌘N`). Give it a name and location, then **Publish repository** in the top bar to put it on GitHub.
 
 When you publish, **Keep this code private** is checked by default. Leave it checked unless the work is meant to be public. Unchecking it makes the repo visible to anyone.
 
@@ -157,9 +157,9 @@ Edit files in Figma exports, Markdown, code, or whatever the project holds, usin
 
 1. Click each file in the Changes list and read the diff.
 2. Uncheck any file or line that doesn't belong in this snapshot. Click the line-number gutter in the diff to include or exclude single lines.
-3. Write a **Summary** in the commit box: a short sentence that says what changed and why, such as `Shorten onboarding headline`.
+3. Write a summary in the **Summary (required)** field: a short sentence that says what changed and why, such as `Shorten onboarding headline`.
 4. Add a **Description** if it helps a reviewer.
-5. Click **Commit to** _your-branch_.
+5. Click the commit button. It names the number of files and the branch, for example **Commit 2 files to update-onboarding-copy**.
 
 Small, focused commits are easier to review and easier to undo. If Claude Code or any other AI tool made the changes, work through [Reviewing AI output](#reviewing-ai-output) before you commit.
 
@@ -176,7 +176,7 @@ Click **Push origin** in the top bar. This uploads your branch to GitHub. The fi
 1. Click **Create Pull Request** (or `⌘R`). Your browser opens GitHub with the branch selected.
 2. Add a title and description, and attach screenshots if the change is visual.
 3. If the change touches UI, copy, or visuals, run the [Accessibility check](#accessibility-check) and note the result in the description.
-4. Click **Create pull request** on GitHub and ask a teammate to review.
+4. Click **Create Pull Request** on GitHub and ask a teammate to review.
 
 **Check:** the pull request page on GitHub lists your commits under **Commits** and your changes under **Files changed**.
 
@@ -184,7 +184,7 @@ Click **Push origin** in the top bar. This uploads your branch to GitHub. The fi
 
 - Click **Fetch origin** to check for new commits. If the button changes to **Pull origin**, click it to download them.
 - To bring the latest `main` into your branch, choose **Branch → Update from main** (`⇧⌘U`). If GitHub Desktop reports a conflict, see [Tips and gotchas](#tips-and-gotchas).
-- After your pull request is merged on GitHub, switch to `main`, pull, and delete the finished branch with **Branch → Delete** (`⇧⌘D`).
+- After your pull request is merged on GitHub, switch to `main`, pull, and delete the finished branch with **Branch → Delete…** (`⇧⌘D`).
 
 **Check:** on `main`, the top-right button reads **Fetch origin**, and your finished branch no longer appears in the **Current Branch** list.
 
@@ -222,8 +222,8 @@ When your branch changes what people see or hear, check it before you open the p
 
 | Situation | What to do |
 | --- | --- |
-| Edited a file and want the old version back | Right-click the file in Changes → **Discard Changes**. The discarded changes go to the Trash, so you can still recover them until the Trash is emptied. |
-| Claude changed more than you asked | Uncheck the files or lines you don't want and commit the rest, or right-click them → **Discard Changes**. If you committed before the request, you can discard everything and start again. |
+| Edited a file and want the old version back | Right-click the file in Changes → **Discard Changes…**. The discarded changes go to the Trash, so you can still recover them until the Trash is emptied. |
+| Claude changed more than you asked | Uncheck the files or lines you don't want and commit the rest, or right-click them → **Discard Changes…**. If you committed before the request, you can discard everything and start again. |
 | Committed too soon and haven't pushed | Click **Undo** at the bottom of the **Changes** tab, next to the last commit. Your changes return to the Changes tab. |
 | Want to undo a commit you already pushed | History tab → right-click the commit → **Revert Changes in Commit**. This adds a new commit that reverses it. |
 | Need to switch branches with unfinished work | Switch anyway and choose **Leave my changes on** _current-branch_ to stash them, or **Bring my changes to** _new-branch_ to carry them along. To restore stashed work, go back to that branch, click **Stashed Changes** in the Changes tab, then **Restore**. |
@@ -234,7 +234,7 @@ When your branch changes what people see or hear, check it before you open the p
 Claude Code works in a project folder and edits files there. GitHub Desktop watches the same folder. The two tools don't need to be connected, because the files on disk are the shared ground.
 
 1. Open the repo in GitHub Desktop and **create a branch first**, so any experiment stays off `main`. Commit any work in progress so you have a clean starting point.
-2. Open a terminal in the project with **Repository → Open in Terminal** (`` ⌃` ``), or use [VS Code](../vs-code/README.md) with the Claude panel. The menu item names whichever shell app is set under **Settings → Integrations**.
+2. Open a terminal in the project with **Repository → Open in Terminal** (`` ⌃` ``), or use [VS Code](../vs-code/README.md) with the Claude panel. The menu item names whichever shell app is set under **GitHub Desktop → Settings… → Integrations**.
 3. Start Claude Code by running `claude`, then describe what you want. Ask for one change at a time, for example:
 
    ```text
@@ -249,7 +249,7 @@ Helpful habits:
 - **Commit before a big request.** A clean starting point lets you discard everything Claude did if the result isn't what you wanted.
 - **Ask for small steps.** One change per request makes diffs short and commits meaningful.
 - **Read the diff.** The summary Claude gives you describes intent. The diff shows what happened.
-- **Let Claude draft the message.** Ask the prompt below, check it against the diff, then paste it into the **Summary** field.
+- **Let Claude draft the message.** Ask the prompt below, check it against the diff, then paste it into the **Summary (required)** field.
 
   ```text
   suggest a commit message for my changes
@@ -267,7 +267,7 @@ Helpful habits:
 2. Click **Fetch origin**. If it becomes **Pull origin**, click it.
 3. Click **Current Branch → New Branch** and name the work.
 4. Make your edits, with Claude Code if you like.
-5. Review the diffs in **Changes**, then write a summary and **Commit**.
+5. Review the diffs in **Changes**, then write a summary and click the commit button.
 6. Click **Push origin**, then **Create Pull Request**.
 7. Respond to review comments. Repeat steps 4 to 6 on the same branch, and the PR updates itself.
 8. When the PR is merged, switch to `main`, pull, and delete the branch.
@@ -285,6 +285,7 @@ Helpful habits:
 ## Next steps
 
 - [VS Code guide](../vs-code/README.md): edit files and run Claude Code in the same window, with Git built in
+- [Git in three places](../git-github-desktop-vscode-comparison.md): each GitHub Desktop action next to its terminal command and VS Code equivalent
 - [git quick reference](../../cli/git.md): the same save-and-share loop in the terminal
 - [gh quick reference](../../cli/gh.md): open and review pull requests from the terminal
 - [Command-line references](../../cli/README.md): every terminal tool in the kit, including [gitleaks](../../cli/gitleaks.md) for catching secrets

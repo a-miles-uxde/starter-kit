@@ -90,10 +90,10 @@ This kit installs [Tool] for you. See the [main README](../../README.md).
 
 ## First-time setup
 
-<!-- OPTIONAL. Keep when the reader must sign in, pick settings, or install something. Numbered steps, one action each. Write menu paths with arrows and the shortcut in parentheses: **[App] → Settings** (`⌘,`). -->
+<!-- OPTIONAL. Keep when the reader must sign in, pick settings, or install something. Numbered steps, one action each. Write menu paths with arrows and the shortcut in parentheses, copying each level exactly as the app shows it, trailing ellipsis included: **File → Clone Repository…** (`⇧⌘O`). -->
 
 1. Open [Tool].
-2. [Action, with the **UI label** bolded exactly as it appears on screen.]
+2. [Action, with the **UI label** bolded exactly as it appears on screen, including capitalization, punctuation, and any trailing ellipsis.]
 3. [Action.] **Check:** [what the reader should see when it worked].
 
 ## Tour of the interface
